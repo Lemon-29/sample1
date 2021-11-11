@@ -7,7 +7,7 @@ class BlogsController < ApplicationController
   end
 
   def create
-    Blog.create(title: params[:blog][:title], content: params[:blog][:content])
+    Blog.create(title: params[:blog])
     # redirect_to '/blogs/new'
     redirect_to new_blog_path
   end
