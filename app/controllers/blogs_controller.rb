@@ -13,7 +13,8 @@ class BlogsController < ApplicationController
     redirect_to new_blog_path
   end
 
- def show 
+ def show
+  @blog = Blog.find(params[:id])
  end
  
 
