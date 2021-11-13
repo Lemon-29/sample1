@@ -13,6 +13,10 @@ class BlogsController < ApplicationController
     redirect_to new_blog_path
   end
 
+ def show 
+ end
+ 
+
   private
   def blog_params
     params.require(:blog).permit(:title, :content)
